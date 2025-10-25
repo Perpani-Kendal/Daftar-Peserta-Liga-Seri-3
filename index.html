@@ -90,6 +90,7 @@
       document.getElementById("frameNasional").style.display = "none";
       document.getElementById("frameBarebow").style.display = "none";
       document.getElementById("frameRecurve").style.display = "none";
+      document.getElementById("frameWaiting").style.display = "none";
 
       if (level === "Nasional") {
         document.getElementById("frameNasional").style.display = "block";
@@ -97,6 +98,8 @@
         document.getElementById("frameBarebow").style.display = "block";
       } else if (level === "Recurve") {
         document.getElementById("frameRecurve").style.display = "block";
+      } else if (level === "Waiting") {
+        document.getElementById("frameWaiting").style.display = "block";
       }
     }
   </script>
@@ -114,10 +117,12 @@
     <button onclick="showData('Nasional')">Nasional</button>
     <button onclick="showData('Barebow')">Barebow</button>
     <button onclick="showData('Recurve')">Recurve</button>
+    <button onclick="showData('Waiting')">Waiting List</button>
   </div>
 
   <iframe id="frameNasional" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSw54o7XxMMLo9Ji7jXeuGotRxcbEw7S2GdUzBV6DZ8iedcerdVkXITJ95mIYVZsjQoEJ51itptT9Q-/pubhtml?gid=1520022169&single=true"></iframe>
   <iframe id="frameBarebow" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSw54o7XxMMLo9Ji7jXeuGotRxcbEw7S2GdUzBV6DZ8iedcerdVkXITJ95mIYVZsjQoEJ51itptT9Q-/pubhtml?gid=1401044231&single=true"></iframe>
   <iframe id="frameRecurve" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSw54o7XxMMLo9Ji7jXeuGotRxcbEw7S2GdUzBV6DZ8iedcerdVkXITJ95mIYVZsjQoEJ51itptT9Q-/pubhtml?gid=281740987&single=true"></iframe>
+  <iframe id="frameWaiting" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSw54o7XxMMLo9Ji7jXeuGotRxcbEw7S2GdUzBV6DZ8iedcerdVkXITJ95mIYVZsjQoEJ51itptT9Q-/pubhtml?gid=508635534&single=true"></iframe>
 </body>
 </html>
